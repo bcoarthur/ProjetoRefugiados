@@ -7,7 +7,7 @@ html, body{
     box-sizing: border-box;
     text-decoration: none;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,61,145,1) 0%, rgba(12,62,153,1) 100%);
+    background: rgb(8, 48, 122)
 }
 
 .container1{
@@ -247,4 +247,222 @@ footer{
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: white;
+}
+
+@media(max-width: 1094px){
+    .texto-estilo{
+        font-size: 14px;
+    }
+    .slider{
+        width: 275px;
+        height: 275px;
+    }
+    .slides{
+        height: 275px;
+    }
+    .slide img{
+        width: 275px;
+        height: 275px;
+    }
+    .manual-navigation{
+        width: 275px;
+    }
+    .navigation-auto{
+        width: 275px;
+        margin-top: 245px;
+    }
+}
+
+@media(max-width: 957px){
+    .titulo-sessao{
+        font-size: 27px;
+    }
+    .titulo-sessao-cadastro{
+        font-size: 20px;
+    }
+    .texto-estilo{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 928px){
+    .slider{
+        width: 235px;
+        height: 235px;
+    }
+    .slides{
+        height: 235px;
+    }
+    .slide img{
+        width: 235px;
+        height: 235px;
+    }
+    .manual-navigation{
+        width: 235px;
+    }
+    .navigation-auto{
+        width: 235px;
+        margin-top: 205px;
+    }
+}
+
+@media(max-width: 875px){
+    .texto-estilo{
+        font-size: 12px;
+    }
+    .titulo-sessao-cadastro{
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 858px){
+    .container1{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .aside-esquerda{
+        margin-right: 0px;
+    }
+}
+
+@media(max-width: 568px){
+    .titulo-sessao{
+        font-size: 25px;
+    }
+    .texto-estilo{
+        font-size: 11px;
+    }
+    .slider{
+        width: 215px;
+        height: 215px;
+    }
+    .slides{
+        height: 215px;
+    }
+    .slide img{
+        width: 215px;
+        height: 215px;
+    }
+    .manual-navigation{
+        width: 215px;
+    }
+    .navigation-auto{
+        width: 215px;
+        margin-top: 185px;
+    }
+    .logo-site{
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 620px){
+    .main-conteudo-geral{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 515px){
+    .cabecalho-direita{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        margin-right: 50px;
+    }
+}
+
+@media(max-width: 466px){
+    .slider{
+        width: 195px;
+        height: 195px;
+    }
+    .slides{
+        height: 195px;
+    }
+    .slide img{
+        width: 195px;
+        height: 195px;
+    }
+    .manual-navigation{
+        width: 195px;
+    }
+    .navigation-auto{
+        width: 195px;
+        margin-top: 165px;
+    }
+    .texto-estilo{
+        font-size: 10px;
+    }
+    .main-conteudo-geral{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 435px){
+    .logo-site{
+        font-size: 23px;
+    }
+    .botao-login{
+        width: 55px;
+    }
+}
+
+@media(max-width: 620px){
+    .main-conteudo-geral{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 515px){
+    .cabecalho-direita{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        margin-right: 50px;
+    }
+}
+
+@media(max-width: 415px){
+    .slider{
+        width: 175px;
+        height: 175px;
+    }
+    .slides{
+        height: 175px;
+    }
+    .slide img{
+        width: 175px;
+        height: 175px;
+    }
+    .manual-navigation{
+        width: 175px;
+    }
+    .navigation-auto{
+        width: 175px;
+        margin-top: 145px;
+    }
+    .texto-estilo{
+        font-size: 9px;
+    }
+    .main-conteudo-geral{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
