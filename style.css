@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,61,145,1) 0%, rgba(12,62,153,1) 100%);
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-areas: "h h" "m a" "f f"
+}
+
+header{
+    grid-area: h;
+}
+
+main{
+    grid-area: m;
+}
+
+aside{
+    grid-area: a;
+}
+
+footer{
+    grid-area: f;
+    background-color: #081230;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,41,117,1) 0%, rgba(13,23,42,1) 100%);
+}
+
+.cabecalho-esquerda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-left: 35px;
+}
+
+.cabecalho-direita{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin-right: 100px;
+}
+
+.cabecalho-direita-estilo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+}
+
+.logo-site{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.main-conteudo-geral{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+.main-coluna-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside-botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 45px;
+}
+
+.titulo-sessao{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.12);
+    color: white;
+}
+
+.botoes{
+    background-color: #f8ca4a;
+    font-family: 'Poppins', sans-serif;
+    color: #122975;
+    border: none;
+    height: 32px;
+    border-radius: 8px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.12);
+}
+
+.botoes:hover{
+    background-color: #d39b03;
+    transition: 0.3s;
+}
+
+.main-botao-estilo{
+    margin-top: 30px;
+    width: 150px;
+}
+
+.aside-botoes-estilo{
+    width: 135px;
+}
+
+.texto-estilo{
+    font-family: 'PT Serif', serif;
+    color: #d3daf1;
+}
+
+.titulo-sessao-cadastro{
+    font-size: 28px;
+}
+
+.aside-esquerda{
+    margin-right: 70px;
+}
+
+.botao-login{
+    width: 75px;
+}
+
+.footer-creditos{
+    font-family: 'Poppins', sans-serif;
+    color: #18358d;
+    display: flex;
+    justify-content: end;
+    margin-top: 32px;
+    margin-right: 20px;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 325px;
+    height: 325px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slides{
+    width: 400%;
+    height: 325px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 325px;
+    height: 325px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 325px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 325px;
+    margin-top: 295px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
